@@ -10,8 +10,12 @@ end
 
 
 file '/var/www/html/index.html' do
-	content '
-	<h1> Hello Balkar </h1>'
+	content "
+	<h1> Hello Balkar </h1>
+	<h1> #{node['hostname']}</h1>
+	<h1> #{node['ipaddress']}</h1>
+
+"
 end
 
 
